@@ -31,7 +31,7 @@ proyecto-hospitalario_personal/
 │       └── secuencia.png
 └── docs/
     ├── Documento_Final_Fajardo_Maryori.md     (documento final — fuente editable)
-    ├── Documento_Final_Fajardo_Maryori.docx   (documento final — entregable)
+    ├── Documento_Final_Fajardo_Maryori.pdf    (documento final — entregable)
     ├── matriz_trazabilidad.md                 (requisito → diagrama → elemento)
     ├── EVIDENCIA_EJECUCION.md                 (validación/renderizado de los diagramas)
     ├── EVIDENCIA_GIT.md                       (historial y árbol Git)
@@ -47,10 +47,11 @@ Para regenerarlos como PNG:
 java -jar plantuml.jar -tpng -o exportados diagramas/*.puml
 ```
 
-## Cómo regenerar el documento final en DOCX
+## Cómo regenerar el documento final en PDF
 
 ```bash
-pandoc docs/Documento_Final_Fajardo_Maryori.md -o docs/Documento_Final_Fajardo_Maryori.docx --resource-path=docs
+pandoc docs/Documento_Final_Fajardo_Maryori.md -o docs/Documento_Final_Fajardo_Maryori.docx --resource-path=docs --toc --toc-depth=2 -V lang=es
+# luego exportar el .docx a PDF (Word: Archivo > Guardar como > PDF, o vía COM/LibreOffice)
 ```
 
 ## Declaración de IA

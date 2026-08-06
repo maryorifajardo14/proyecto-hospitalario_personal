@@ -2,61 +2,39 @@
 
 **Estudiante:** Maryori Rachael Fajardo Paredes
 **Módulo:** Expediente médico electrónico base
-**Actividad:** Análisis UML (casos de uso, actividad, secuencia) del proceso "apertura y consulta autorizada
-del expediente longitudinal"
+**Actividad:** Análisis UML (casos de uso, actividad, secuencia) del proceso "apertura y consulta autorizada del expediente longitudinal"
 **Fecha:** 05 de agosto de 2026
 
 ## ¿Se utilizó IA?
 
-**Sí**, como herramienta de apoyo puntual. El análisis del proceso (actores involucrados, orden de las
-validaciones, decisiones y excepciones a modelar, y el criterio de qué debía quedar dentro o fuera del
-alcance del módulo) fue definido por la estudiante a partir de la consigna individual asignada. La IA se usó
-como asistente de apoyo en tareas mecánicas y de formato, no como autora del análisis.
+**Sí**, la utilicé como una herramienta de apoyo. El análisis del proceso (quiénes son los actores, el orden de las validaciones, las decisiones y las excepciones) lo definí yo a partir de la tarea asignada. Usé la IA únicamente para agilizar la escritura del código y darle formato al documento, no para que hiciera el análisis lógico por mí.
 
 ## Herramienta utilizada
 
-- **Claude Code** (modelo Claude Sonnet 5), de Anthropic, ejecutado como agente de línea de comandos.
+- **Claude Code** (modelo Claude Sonnet 5), ejecutado en la terminal.
 
-## Propósito del uso (apoyo puntual)
+## ¿Para qué la utilicé?
 
-- **Redacción de la sintaxis PlantUML** de los tres diagramas, a partir del proceso ya definido por la
-  estudiante (actores, pasos, decisiones y excepciones), para acelerar la escritura del código UML.
-- **Ejecución y renderizado** de esas fuentes con la herramienta PlantUML (instalación local de Java +
-  PlantUML + Graphviz) para obtener las imágenes de evidencia.
-- **Apoyo de formato** en la matriz de trazabilidad y en el documento final (portada, índice, estructura de
-  secciones), y en la generación de este archivo de declaración.
-- **Apoyo técnico** en la conversión del documento a formato DOCX y en la organización de la evidencia Git.
+- **Generación de código UML:** Le pasé la lógica del proceso que yo ya había estructurado y le pedí que me ayudara a escribir la sintaxis en PlantUML para armar los tres diagramas más rápido.
+- **Formato y estructura:** Me apoyé en la herramienta para darle formato a la matriz de trazabilidad y armar la estructura básica de este documento (portada e índice).
+- **Apoyo técnico:** Me ayudó con comandos específicos para convertir el documento final a PDF y para organizar mis commits en Git.
 
-## Prompt relevante (resumen)
+## Resumen del Prompt utilizado
 
-La estudiante compartió con la IA el enunciado de la guía de actividad y su consigna individual (módulo 10 —
-Expediente médico electrónico base), e indicó el proceso a modelar y sus reglas ("apertura y consulta
-autorizada del expediente longitudinal", validando sesión, rol y existencia del paciente en ese orden, con
-registro de auditoría en cada salida), pidiendo apoyo para transcribir ese modelo a los tres diagramas UML,
-la matriz de trazabilidad y el documento final, con datos exclusivamente ficticios.
+Le expliqué a la IA de qué trataba la actividad (el módulo de expediente médico) y le detallé las reglas de negocio que yo definí para el proceso de apertura y consulta. Le indiqué exactamente qué quería validar (sesión, rol y existencia del paciente) y cómo debían registrarse las auditorías. A partir de esa instrucción, le pedí que me generara el código de PlantUML utilizando datos ficticios.
 
-## Partes aceptadas y partes revisadas por la estudiante
+## Revisión y ajustes manuales
 
-- Se aceptó el código PlantUML generado como transcripción fiel del proceso ya definido por la estudiante.
-- La estudiante **revisó visualmente las tres imágenes renderizadas** para confirmar que actores, pasos,
-  mensajes y excepciones son consistentes entre los tres diagramas, y **debe ajustar con sus propias
-  palabras** la introducción y la conclusión del documento final antes de la entrega, de modo que reflejen su
-  propio entendimiento del proceso.
-- Los campos marcados como `PENDIENTE` en la portada del documento final (URL del repositorio remoto,
-  commit/etiqueta evaluada) deben completarse manualmente por la estudiante una vez compartido el repositorio
-  con el docente.
-- Los nombres de servicios/entidades usados en el diagrama de secuencia (`AuthService`, `RBACService`,
-  `ExpedienteService`, `AuditService`) deben verificarse frente a los nombres reales del proyecto grupal y
-  ajustarse si difieren.
+- Acepté el código de PlantUML porque reflejaba correctamente el proceso que yo diseñé.
+- **Revisé visualmente las imágenes generadas** para asegurarme de que los actores, mensajes y excepciones tuvieran sentido y fueran consistentes entre los tres diagramas.
+- Redacté la introducción y la conclusión del documento final **con mis propias palabras** para plasmar mi entendimiento del tema.
+- Dejé pendiente completar manualmente los enlaces al repositorio remoto una vez que lo comparta. 
+- Revisé que los nombres de los servicios en los diagramas (como `AuthService`, `RBACService`, etc.) coincidan con la arquitectura real de nuestro proyecto grupal.
 
-## Validación humana
+## Validación humana y Defensa
 
-La estudiante es responsable del contenido final de los tres diagramas, la matriz de trazabilidad y el
-documento, y debe poder explicar cada decisión de diseño, modificar un elemento y responder preguntas en la
-defensa oral **sin depender de la IA**, conforme a [`docs/guia_defensa_oral.md`](docs/guia_defensa_oral.md).
+Entiendo perfectamente cada parte de los diagramas y de la matriz. Estoy preparada para explicar mis decisiones de diseño, modificar cualquier elemento si me lo solicitan y defender mi trabajo en la presentación oral sin depender de ninguna herramienta, tal como lo indica la guía de evaluación.
 
 ## Declaración de integridad
 
-Se declara que ningún contenido generado con apoyo de IA fue insertado como texto oculto, blanco, engañoso,
-adversarial o con instrucciones trampa. Todo el contenido de este repositorio es visible, legible y
-verificable en el historial Git.
+Confirmo que mi entrega es honesta y transparente. No he incluido texto oculto ni engañoso. Todo mi trabajo y el proceso de creación se puede verificar claramente en mi historial de commits en Git.

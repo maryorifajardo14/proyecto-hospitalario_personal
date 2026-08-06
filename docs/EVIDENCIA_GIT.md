@@ -45,8 +45,8 @@ diagramas/exportados/actividad.png
 diagramas/exportados/caso_uso.png
 diagramas/exportados/secuencia.png
 diagramas/secuencia.puml
-docs/Documento_Final_Fajardo_Maryori.docx
 docs/Documento_Final_Fajardo_Maryori.md
+docs/Documento_Final_Fajardo_Maryori.pdf
 docs/EVIDENCIA_EJECUCION.md
 docs/EVIDENCIA_GIT.md
 docs/guia_defensa_oral.md

@@ -1,0 +1,64 @@
+@startuml actividad
+' =====================================================================
+' Diagrama de Actividad
+' Modulo: Expediente medico electronico base
+' Proceso: Apertura y consulta autorizada del expediente longitudinal
+' Estudiante: Maryori Rachael Fajardo Paredes
+' =====================================================================
+skinparam activity {
+  BackgroundColor #F2F7FC
+  BorderColor #2C5C8A
+  DiamondBackgroundColor #FFF3CD
+  DiamondBorderColor #8A6D3B
+}
+skinparam swimlaneTitleBackgroundColor #DCE6F1
+
+|Personal Clinico Autorizado|
+start
+:Buscar/seleccionar paciente\ndentro de su tenant;
+:Solicitar apertura del\nexpediente longitudinal;
+
+|Sistema HIS (Backend)|
+:Recibir solicitud y extraer\ntoken de sesion;
+if (¿Token valido y vigente?) then (no)
+  :Rechazar solicitud (401);
+  |Modulo de Auditoria|
+  :Registrar evento\n"SESION_INVALIDA";
+  |Personal Clinico Autorizado|
+  :Recibir mensaje\n"Sesion expirada, inicie\nsesion nuevamente";
+  stop
+else (si)
+  |Sistema HIS (Backend)|
+  :Obtener rol y tenant\ndel usuario autenticado;
+  if (¿Rol autorizado para\nconsultar expedientes\nen el tenant?) then (no)
+    :Denegar acceso (403);
+    |Modulo de Auditoria|
+    :Registrar evento\n"ACCESO_DENEGADO"\n(usuario, rol, paciente, fecha/hora);
+    |Personal Clinico Autorizado|
+    :Recibir mensaje\n"Acceso denegado";
+    stop
+  else (si)
+    |Sistema HIS (Backend)|
+    :Buscar paciente\nen el tenant;
+    if (¿Paciente existe\nen el tenant del usuario?) then (no)
+      :Responder\n"Paciente no encontrado" (404);
+      |Modulo de Auditoria|
+      :Registrar evento\n"PACIENTE_NO_ENCONTRADO";
+      |Personal Clinico Autorizado|
+      :Recibir mensaje de error;
+      stop
+    else (si)
+      |Sistema HIS (Backend)|
+      :Consolidar historial longitudinal\n(notas SOAP, diagnosticos, alergias,\nsignos vitales, laboratorios,\nprescripciones);
+      |Modulo de Auditoria|
+      :Registrar evento\n"ACCESO_CONCEDIDO"\n(usuario, paciente, fecha/hora,\nalcance consultado);
+      |Sistema HIS (Backend)|
+      :Responder 200 OK con\nexpediente consolidado;
+      |Personal Clinico Autorizado|
+      :Visualizar y consultar\nel expediente longitudinal;
+      stop
+    endif
+  endif
+endif
+
+@enduml

@@ -13,9 +13,9 @@ date: "05 de agosto de 2026"
 | Módulo oficial | Expediente médico electrónico base |
 | Alcance de la actividad | Expediente médico electrónico base |
 | Proceso modelado | Apertura y consulta autorizada del expediente longitudinal |
-| Repositorio (URL) | `PENDIENTE: completar con la URL del remoto en GitHub tras el push` |
+| Repositorio (URL) | https://github.com/maryorifajardo14/proyecto-hospitalario_personal |
 | Rama evaluada | `main` |
-| Commit / etiqueta evaluada | `PENDIENTE: completar con el hash del commit final (ver docs/EVIDENCIA_GIT.md)` |
+| Commit / etiqueta evaluada | `PENDIENTE: completar con el hash del commit final tras el push (ver docs/EVIDENCIA_GIT.md)` |
 | Fecha de entrega | 05 de agosto de 2026 |
 
 > **Nota:** los campos marcados como *PENDIENTE* deben completarse una vez creado el repositorio remoto

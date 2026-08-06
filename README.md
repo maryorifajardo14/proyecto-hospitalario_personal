@@ -9,9 +9,9 @@
 
 | Campo | Valor |
 |---|---|
-| URL del repositorio | `PENDIENTE: pegar aquí la URL de GitHub tras crear el remoto y compartirlo con el docente` |
+| URL del repositorio | https://github.com/maryorifajardo14/proyecto-hospitalario_personal |
 | Rama evaluada | `main` |
-| Commit / etiqueta evaluada | `PENDIENTE: pegar aquí el hash corto del commit final (ver docs/EVIDENCIA_GIT.md)` |
+| Commit / etiqueta evaluada | `PENDIENTE: pegar aquí el hash corto del commit final tras el push (ver docs/EVIDENCIA_GIT.md)` |
 
 > Ver [instrucciones para completar estos campos](docs/EVIDENCIA_GIT.md#pendiente-tras-crear-el-remoto).
 

@@ -6,6 +6,9 @@
 ## Historial legible (`git log --oneline`)
 
 ```
+bc5ec36 docs: reemplazar entregable DOCX por PDF y ajustar declaracion de IA
+74fde10 docs: completar URL real del repositorio en portada y README
+20fcff0 docs: evidencia Git (historial, autoria y arbol de archivos)
 b332431 docs: guia breve de preparacion para la defensa oral
 1bfa84f docs: declaracion transparente de uso de IA
 4c29dca docs: documento final (portada, desarrollo, conclusion, bibliografia)
@@ -21,6 +24,9 @@ acafaea feat(uml): diagrama de casos de uso del proceso de apertura de expedient
 ## Historial con autor y fecha
 
 ```
+bc5ec36 | maryorifajardo14 <mfajardop1@miumg.edu.gt> | 2026-08-06 | docs: reemplazar entregable DOCX por PDF y ajustar declaracion de IA
+74fde10 | maryorifajardo14 <mfajardop1@miumg.edu.gt> | 2026-08-05 | docs: completar URL real del repositorio en portada y README
+20fcff0 | maryorifajardo14 <mfajardop1@miumg.edu.gt> | 2026-08-05 | docs: evidencia Git (historial, autoria y arbol de archivos)
 b332431 | maryorifajardo14 <mfajardop1@miumg.edu.gt> | 2026-08-05 | docs: guia breve de preparacion para la defensa oral
 1bfa84f | maryorifajardo14 <mfajardop1@miumg.edu.gt> | 2026-08-05 | docs: declaracion transparente de uso de IA
 4c29dca | maryorifajardo14 <mfajardop1@miumg.edu.gt> | 2026-08-05 | docs: documento final (portada, desarrollo, conclusion, bibliografia)

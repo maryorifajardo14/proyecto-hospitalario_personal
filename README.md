@@ -1,69 +1,32 @@
-# Análisis UML — Expediente médico electrónico base
+# Expediente Médico Electrónico — Avance Semana 1 y 2
 
-**Estudiante:** Maryori Rachael Fajardo Paredes
-**Usuario GitHub:** `maryorifajardo14`
-**Módulo oficial:** Expediente médico electrónico base
-**Proceso modelado:** Apertura y consulta autorizada del expediente longitudinal
+Repositorio personal de evidencia para el curso, con el avance del módulo **Expediente Médico Electrónico (ASII-10)** dentro del proyecto de equipo [Sistema Hospitalario Integrado](https://github.com/compilations-teams/sistema-hospitalario-integrado-SistenasII-2026).
 
-## Portada del repositorio (completar tras el push a GitHub)
+Autora: Maryori Fajardo (`maryorifajardo14`).
 
-| Campo | Valor |
-|---|---|
-| URL del repositorio | https://github.com/maryorifajardo14/proyecto-hospitalario_personal |
-| Rama evaluada | `main` |
-| Commit / etiqueta evaluada | `PENDIENTE: pegar aquí el hash corto del commit final tras el push (ver docs/EVIDENCIA_GIT.md)` |
+## Contenido por semana
 
-> Ver [instrucciones para completar estos campos](docs/EVIDENCIA_GIT.md#pendiente-tras-crear-el-remoto).
+| Semana | Entrega | Evidencia |
+|---:|---|---|
+| 1 | Actores, alcance, casos de uso y modelado de dominio. | [docs/semana-01-actores-alcance-casos-de-uso.md](docs/semana-01-actores-alcance-casos-de-uso.md) · [docs/module-10/semana-1-casos-de-uso.md](docs/module-10/semana-1-casos-de-uso.md) · [Diagrama de casos de uso](docs/modulos/mod10/diagramas/01-casos-de-uso.md) · [Diagrama de clases/diseño](docs/modulos/mod10/diagramas/02-clases-diseno.md) · código en `app/Domain/MedicalRecord/`, `app/Models/` y pruebas unitarias de dominio en `tests/Unit/Domain/MedicalRecord/`. |
+| 2 | RF/RNF, criterios de aceptación, principios SOLID, arquitectura, capa de aplicación/infraestructura/presentación y pruebas. | [docs/semana-02-rf-rnf-criterios-aceptacion-solid.md](docs/semana-02-rf-rnf-criterios-aceptacion-solid.md) · [docs/module-10/semana-2-rf-rnf-solid.md](docs/module-10/semana-2-rf-rnf-solid.md) · [ADR de arquitectura](docs/modulos/mod10/ADR-001-arquitectura.md) · [Especificación](docs/modulos/mod10/ESPECIFICACION.md) · [Evidencia de ejecución](docs/modulos/mod10/EVIDENCIA.md) · código en `app/Application/MedicalRecord/`, `app/Infrastructure/MedicalRecord/`, `app/Http/` y pruebas en `tests/Feature/MedicalRecord/`. |
 
-## Índice del repositorio
+## Estructura relevante
 
 ```
-proyecto-hospitalario_personal/
-├── README.md                              (este archivo)
-├── DECLARACION_IA.md                      (declaración transparente de uso de IA)
-├── diagramas/
-│   ├── caso_uso.puml                      (fuente editable UML — casos de uso)
-│   ├── actividad.puml                     (fuente editable UML — actividad)
-│   ├── secuencia.puml                     (fuente editable UML — secuencia)
-│   └── exportados/
-│       ├── caso_uso.png
-│       ├── actividad.png
-│       └── secuencia.png
-└── docs/
-    ├── Documento_Final_Fajardo_Maryori.md     (documento final — fuente editable)
-    ├── Documento_Final_Fajardo_Maryori.pdf    (documento final — entregable)
-    ├── matriz_trazabilidad.md                 (requisito → diagrama → elemento)
-    ├── EVIDENCIA_EJECUCION.md                 (validación/renderizado de los diagramas)
-    ├── EVIDENCIA_GIT.md                       (historial y árbol Git)
-    └── guia_defensa_oral.md                   (guía breve para la defensa oral)
+app/
+  Domain/MedicalRecord/        # entidad, reglas de autorización, puertos, excepciones
+  Application/MedicalRecord/   # casos de uso (Actions)
+  Infrastructure/MedicalRecord/# adaptadores Eloquent / en memoria
+  Http/                        # controlador API, request, resource
+  Models/                      # modelos Eloquent
+database/                      # migraciones y factories del módulo
+tests/                         # pruebas unitarias, de aplicación e integración
+docs/                          # documentación de análisis, diseño y evidencia por semana
 ```
 
-## Cómo regenerar los diagramas
+## Contexto
 
-Los diagramas fuente están en [`diagramas/*.puml`](diagramas/) (formato PlantUML, texto plano editable).
-Para regenerarlos como PNG:
+Este código proviene de mi trabajo en la rama `feature/asii-10-expediente-medico-electronico-base-maryorifajardo14` del repositorio de equipo. Aquí se presenta de forma aislada, organizado en dos commits (`semana 1` y `semana 2`) como evidencia individual de avance para el curso.
 
-```bash
-java -jar plantuml.jar -tpng -o exportados diagramas/*.puml
-```
-
-## Cómo regenerar el documento final en PDF
-
-```bash
-pandoc docs/Documento_Final_Fajardo_Maryori.md -o docs/Documento_Final_Fajardo_Maryori.docx --resource-path=docs --toc --toc-depth=2 -V lang=es
-# luego exportar el .docx a PDF (Word: Archivo > Guardar como > PDF, o vía COM/LibreOffice)
-```
-
-## Declaración de IA
-
-Ver [`DECLARACION_IA.md`](DECLARACION_IA.md).
-
-## Lista de comprobación de entrega
-
-- [x] Portada e índice actualizados (ver `docs/Documento_Final_Fajardo_Maryori.md` y este README).
-- [x] Consigna individual modelada en los tres diagramas UML.
-- [ ] Repositorio remoto compartido con el docente, commit identificable y evidencia Git final
-      (completar `docs/EVIDENCIA_GIT.md` y los campos `PENDIENTE` tras el push).
-- [x] Fuentes editables (`.puml`, `.md`) y datos exclusivamente ficticios.
-- [x] Declaración transparente de IA (`DECLARACION_IA.md`).
-- [x] Guía de preparación para la defensa oral (`docs/guia_defensa_oral.md`).
+Ver [DECLARACION_IA.md](docs/module-10/DECLARACION_IA.md) para la declaración de uso de IA en este módulo.

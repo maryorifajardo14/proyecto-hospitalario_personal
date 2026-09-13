@@ -1,40 +1,38 @@
 # Declaración de uso de Inteligencia Artificial
 
 **Estudiante:** Maryori Rachael Fajardo Paredes
-**Módulo:** Expediente médico electrónico base
-**Actividad:** Análisis UML (casos de uso, actividad, secuencia) del proceso "apertura y consulta autorizada del expediente longitudinal"
-**Fecha:** 05 de agosto de 2026
+**Módulo:** Expediente médico electrónico base (ASII-10)
+**Actividad:** Avance de semana 1 y semana 2 — modelado de dominio, casos de uso, RF/RNF, principios SOLID, arquitectura, capa de aplicación/infraestructura/presentación y pruebas
+**Fecha:** 7 de septiembre de 2026
 
 ## ¿Se utilizó IA?
 
-**Sí**, la utilicé como una herramienta de apoyo. El análisis del proceso (quiénes son los actores, el orden de las validaciones, las decisiones y las excepciones) lo definí yo a partir de la tarea asignada. Usé la IA únicamente para agilizar la escritura del código y darle formato al documento, no para que hiciera el análisis lógico por mí.
+Sí, la utilicé como herramienta de apoyo en distintas etapas del módulo. El análisis del proceso, las reglas de negocio y las decisiones de arquitectura son mías; usé la IA para acelerar la redacción, el formato de la documentación, la implementación del código a partir de mis decisiones ya tomadas, y para organizar este repositorio personal a partir del trabajo que ya tenía en el repositorio de equipo.
 
-## Herramienta utilizada
+## Herramientas utilizadas
 
-- **Claude Code** (modelo Claude Sonnet 5), ejecutado en la terminal.
+- **Claude Code** (modelo Claude Sonnet 5), como apoyo principal durante todo el módulo.
+- **Gemini**, de forma puntual, para entender el uso de Git Worktree y apoyar la redacción inicial de la definición de actores.
 
 ## ¿Para qué la utilicé?
 
-- **Generación de código UML:** Le pasé la lógica del proceso que yo ya había estructurado y le pedí que me ayudara a escribir la sintaxis en PlantUML para armar los tres diagramas más rápido.
-- **Formato y estructura:** Me apoyé en la herramienta para darle formato a la matriz de trazabilidad y armar la estructura básica de este documento (portada e índice).
-- **Apoyo técnico:** Me ayudó con comandos específicos para convertir el documento final a PDF y para organizar mis commits en Git.
-
-## Resumen del Prompt utilizado
-
-Le expliqué a la IA de qué trataba la actividad (el módulo de expediente médico) y le detallé las reglas de negocio que yo definí para el proceso de apertura y consulta. Le indiqué exactamente qué quería validar (sesión, rol y existencia del paciente) y cómo debían registrarse las auditorías. A partir de esa instrucción, le pedí que me generara el código de PlantUML utilizando datos ficticios.
+- **Organización de este repositorio:** le pedí que tomara mi trabajo ya realizado en la rama `feature/asii-10-expediente-medico-electronico-base-maryorifajardo14` del repositorio de equipo y lo organizara aquí en dos entregas (semana 1 y semana 2), con la estructura de ramas `developer` / `feature/...` pedida en el curso.
+- **Implementación de código:** a partir de la arquitectura que yo definí (`docs/module-10/semana-3-arquitectura.md`), me apoyé en la herramienta para escribir las clases de dominio, aplicación, infraestructura y presentación, y para redactar las pruebas correspondientes.
+- **Documentación:** apoyo en la redacción y formato de las tablas de RF/RNF, criterios de aceptación, el ejemplo del principio SOLID, el ADR de arquitectura y los diagramas.
+- **Organización de commits y ramas en Git.**
 
 ## Revisión y ajustes manuales
 
-- Acepté el código de PlantUML porque reflejaba correctamente el proceso que yo diseñé.
-- **Revisé visualmente las imágenes generadas** para asegurarme de que los actores, mensajes y excepciones tuvieran sentido y fueran consistentes entre los tres diagramas.
-- Redacté la introducción y la conclusión del documento final **con mis propias palabras** para plasmar mi entendimiento del tema.
-- Dejé pendiente completar manualmente los enlaces al repositorio remoto una vez que lo comparta. 
-- Revisé que los nombres de los servicios en los diagramas (como `AuthService`, `RBACService`, etc.) coincidan con la arquitectura real de nuestro proyecto grupal.
+- Revisé cada clase, migración y prueba para que los nombres de columnas, rutas y relaciones coincidieran con el esquema real del proyecto de equipo (`patients`, `users`, `medical_records`).
+- Detecté y corregí, junto con la herramienta, un problema en el diseño de la bitácora de accesos (`medical_record_access_logs`): la primera versión forzaba una clave foránea obligatoria hacia `patients`, lo que habría roto el registro de intentos denegados contra un paciente inexistente.
+- **Limitación que declaro explícitamente:** en el entorno donde preparé esta entrega no había PHP habilitado ni Composer/PostgreSQL disponibles, por lo que **no pude ejecutar realmente `php artisan migrate` ni `php artisan test`**. El detalle completo y los comandos pendientes de correr por mí están documentados en [`docs/modulos/mod10/EVIDENCIA.md`](docs/modulos/mod10/EVIDENCIA.md). No se presenta ninguna salida de ejecución como si fuera real.
 
-## Validación humana y Defensa
+## Validación humana y defensa
 
-Entiendo perfectamente cada parte de los diagramas y de la matriz. Estoy preparada para explicar mis decisiones de diseño, modificar cualquier elemento si me lo solicitan y defender mi trabajo en la presentación oral sin depender de ninguna herramienta, tal como lo indica la guía de evaluación.
+Entiendo el diseño de dominio, la arquitectura por capas y las decisiones de cada semana, y estoy en capacidad de explicarlas y defenderlas en la presentación oral sin depender de ninguna herramienta.
 
 ## Declaración de integridad
 
-Confirmo que mi entrega es honesta y transparente. No he incluido texto oculto ni engañoso. Todo mi trabajo y el proceso de creación se puede verificar claramente en mi historial de commits en Git.
+Confirmo que esta entrega es honesta y transparente, incluyendo la limitación de validación declarada arriba. Todo el proceso puede verificarse en el historial de commits de este repositorio.
+
+Ver también las declaraciones específicas de cada semana: [`docs/module-10/DECLARACION_IA.md`](docs/module-10/DECLARACION_IA.md) y [`docs/modulos/mod10/DECLARACION_IA.md`](docs/modulos/mod10/DECLARACION_IA.md).

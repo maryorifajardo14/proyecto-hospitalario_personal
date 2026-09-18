@@ -1,4 +1,4 @@
-# Expediente Médico Electrónico — Avance Semana 1 a 4
+# Expediente Médico Electrónico — Avance Semana 1 a 6
 
 Repositorio personal de evidencia para el curso, con el avance del módulo **Expediente Médico Electrónico (ASII-10)** dentro del proyecto de equipo [Sistema Hospitalario Integrado](https://github.com/compilations-teams/sistema-hospitalario-integrado-SistenasII-2026).
 
@@ -12,6 +12,8 @@ Autora: Maryori Fajardo (`maryorifajardo14`).
 | 2 | RF/RNF, criterios de aceptación y un principio SOLID aplicado al módulo. | [docs/semana-02-rf-rnf-criterios-aceptacion-solid.md](docs/semana-02-rf-rnf-criterios-aceptacion-solid.md) · [docs/module-10/semana-2-rf-rnf-solid.md](docs/module-10/semana-2-rf-rnf-solid.md) |
 | 3 | Vista arquitectónica del módulo. | [docs/module-10/semana-3-arquitectura.md](docs/module-10/semana-3-arquitectura.md) · [ADR de arquitectura](docs/modulos/mod10/ADR-001-arquitectura.md) · [Diagrama de secuencia](docs/modulos/mod10/diagramas/03-secuencia.md) · [Diagrama de componentes](docs/modulos/mod10/diagramas/04-componentes.md) · [Vista de datos](docs/modulos/mod10/diagramas/05-vista-datos.md) |
 | 4 | Diseño por capas y responsabilidades (UI, API, lógica, persistencia). | [Especificación](docs/modulos/mod10/ESPECIFICACION.md) · [Evidencia de ejecución](docs/modulos/mod10/EVIDENCIA.md) · [Borrador de PR](docs/modulos/mod10/PR_BODY.md) · código en `app/Application/MedicalRecord/`, `app/Infrastructure/MedicalRecord/`, `app/Http/` y pruebas en `tests/Feature/MedicalRecord/`. |
+| 5 | Contrato API preliminar y plan de integración (endpoints, payloads, errores, permisos, rama, worktree y PR). | [docs/module-10/semana-5-contrato-api-plan-integracion.md](docs/module-10/semana-5-contrato-api-plan-integracion.md) |
+| 6 | Primera evaluación parcial: defensa teórica y caso práctico arquitectónico. | [docs/module-10/semana-6-primera-evaluacion-parcial.md](docs/module-10/semana-6-primera-evaluacion-parcial.md) |
 
 ## Estructura relevante
 
@@ -29,6 +31,6 @@ docs/                          # documentación de análisis, diseño, arquitect
 
 ## Contexto
 
-Este código proviene de mi trabajo en la rama `feature/asii-10-expediente-medico-electronico-base-maryorifajardo14` del repositorio de equipo. Aquí se presenta de forma aislada, organizado en commits por semana (`semana 1` a `semana 4`) como evidencia individual de avance para el curso.
+Este código proviene de mi trabajo en la rama `feature/asii-10-expediente-medico-electronico-base-maryorifajardo14` del repositorio de equipo. Aquí se presenta de forma aislada, organizado en commits por semana (`semana 1` a `semana 6`) como evidencia individual de avance para el curso.
 
 Ver [DECLARACION_IA.md](DECLARACION_IA.md) para la declaración de uso de IA de este repositorio, y [docs/module-10/DECLARACION_IA.md](docs/module-10/DECLARACION_IA.md) para la declaración específica del módulo.

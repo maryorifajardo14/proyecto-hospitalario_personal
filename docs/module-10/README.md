@@ -11,6 +11,9 @@ Documentación de análisis y diseño del módulo de Expediente médico electró
 - [Semana 1 — Actores, procesos, límites, casos de uso y narrativa](./semana-1-casos-de-uso.md) (incluye anexo con diagramas de actividad/secuencia y reglas de dominio, adelantados para semanas siguientes)
 - [Semana 2 — RF/RNF, criterios de aceptación y principio SOLID](./semana-2-rf-rnf-solid.md)
 - [Semana 3 — Vista arquitectónica y dependencias con el HIS](./semana-3-arquitectura.md)
+- [Semana 4 — Diseño por capas y responsabilidades](./semana-4-diseno-por-capas.md)
+- [Semana 5 — Contrato API preliminar y plan de integración](./semana-5-contrato-api-plan-integracion.md)
+- [Semana 6 — Primera evaluación parcial: defensa teórica y caso práctico arquitectónico](./semana-6-primera-evaluacion-parcial.md)
 - [Declaración de uso de IA](./DECLARACION_IA.md)
 
 ## Actividad integradora de arquitectura federada y persistencia
@@ -26,5 +29,6 @@ forma independiente del plan semanal de arriba: ver [`docs/modulos/mod10/`](../m
 | 1 | Diagnóstico, actores y casos de uso | ✅ Entregado |
 | 2 | RF/RNF, criterios de aceptación y ejemplo SOLID | ✅ Entregado |
 | 3 | Vista arquitectónica del módulo | ✅ Entregado |
-| 4 | Diseño por capas y responsabilidades | Pendiente |
-| 5 | Contrato API preliminar y plan de integración | Pendiente |
+| 4 | Diseño por capas y responsabilidades | ✅ Entregado |
+| 5 | Contrato API preliminar y plan de integración | ✅ Entregado |
+| 6 | Primera evaluación parcial (defensa teórica y caso práctico arquitectónico) | ✅ Entregado |

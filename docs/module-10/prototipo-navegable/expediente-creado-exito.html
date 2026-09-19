@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expediente creado — ASII-10</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="toast-region" aria-live="polite" role="status">
+      <div class="toast alert-success">
+        ✅ Expediente EXP-00043 creado correctamente para Ana Pérez.
+      </div>
+    </div>
+
+    <header class="topbar">
+      <span class="brand">Expediente médico electrónico</span>
+      <span class="badge-role">Sesión: <span data-role-badge></span></span>
+    </header>
+
+    <a class="back-link role-link" href="buscar-paciente.html">← Volver a búsqueda</a>
+
+    <main>
+      <h1>Ana Pérez</h1>
+      <p class="patient-meta">Expediente: EXP-00043 · Abierto: hoy</p>
+
+      <div class="card">
+        <p>El expediente longitudinal fue creado (respuesta 201 del contrato de la Semana 5).</p>
+        <p class="rule-note">
+          RI-09 (Semana 9): el aviso de éxito se anuncia mediante una región
+          <code>aria-live="polite"</code>, no solo con el color verde del toast.
+        </p>
+      </div>
+    </main>
+
+    <footer class="prototype-footer">
+      ASII-10 — Prototipo de evidencia académica, no es software de producción.
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

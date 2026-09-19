@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASII-10 — Expediente médico electrónico</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <span class="brand">Sistema Hospitalario Integrado — ASII-10</span>
+    </header>
+
+    <main>
+      <h1>Expediente médico electrónico base</h1>
+      <p class="patient-meta">
+        Prototipo navegable de baja/media fidelidad (Semana 11). Equivalente estático a un
+        prototipo de Figma/Excalidraw: HTML/CSS/JS plano, sin backend real, para recorrer los
+        flujos diseñados en la Semana 8 y las reglas de accesibilidad de la Semana 9.
+      </p>
+
+      <div class="card">
+        <h2>Elegí un rol para empezar a navegar</h2>
+        <p class="patient-meta">
+          El sistema real decide qué botones mostrar según el rol de la sesión (RI-01/RI-02,
+          Semana 8). Este selector simula esa sesión para el prototipo.
+        </p>
+        <p><a class="btn btn-primary btn-block" href="buscar-paciente.html?rol=recepcionista">Entrar como Recepcionista</a></p>
+        <p style="margin-top:.75rem"><a class="btn btn-secondary btn-block" href="buscar-paciente.html?rol=medico">Entrar como Médico / Enfermera</a></p>
+      </div>
+
+      <p class="rule-note">
+        Ver <a href="README.md">README.md</a> de este prototipo para el mapa completo de
+        pantallas y su trazabilidad con las Semanas 7 a 10.
+      </p>
+    </main>
+
+    <footer class="prototype-footer">
+      ASII-10 — Expediente médico electrónico base · Prototipo de evidencia académica, no es
+      software de producción.
+    </footer>
+  </div>
+</body>
+</html>

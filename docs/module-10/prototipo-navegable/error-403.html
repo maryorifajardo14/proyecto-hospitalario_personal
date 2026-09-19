@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acceso denegado — ASII-10</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="toast-region" aria-live="assertive" role="alert">
+      <div class="toast alert-error">🔒 No tiene autorización para consultar este expediente.</div>
+    </div>
+
+    <header class="topbar">
+      <span class="brand">Expediente médico electrónico</span>
+    </header>
+
+    <main>
+      <div class="card" style="text-align:center">
+        <h1>Acceso denegado</h1>
+        <p>No tiene autorización para consultar este expediente.</p>
+        <p class="patient-meta">
+          Si considera que es un error, contacte al administrador de su hospital.
+        </p>
+        <a class="btn btn-primary role-link" href="buscar-paciente.html">Volver a búsqueda</a>
+      </div>
+
+      <p class="rule-note">
+        RI-05 (Semana 8): el mensaje es siempre genérico y no distingue entre "no tiene permiso" y
+        "el expediente no existe", para no filtrar información a un usuario no autorizado
+        (RNF-10-03/RNF-10-06, Semana 2). RI-09 (Semana 9): se anuncia con
+        <code>role="alert"</code>, no solo con color rojo.
+      </p>
+    </main>
+
+    <footer class="prototype-footer">
+      ASII-10 — Prototipo de evidencia académica, no es software de producción.
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

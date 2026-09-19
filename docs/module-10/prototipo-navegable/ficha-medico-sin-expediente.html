@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de paciente — Ana Pérez</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <span class="brand">Expediente médico electrónico</span>
+      <span class="badge-role">Sesión: <span data-role-badge></span></span>
+    </header>
+
+    <a class="back-link role-link" href="buscar-paciente.html">← Volver a búsqueda</a>
+
+    <main>
+      <h1>Ana Pérez</h1>
+      <p class="patient-meta">Documento: 1234-56789-0101 · Tenant: Hospital Norte</p>
+
+      <div class="card">
+        <div class="alert alert-warning" role="status">
+          Este paciente aún no tiene expediente abierto.
+        </div>
+        <p class="patient-meta">
+          El sistema responde <strong>404</strong> a la consulta (UC-10-02). Este rol no tiene
+          acción disponible aquí: solo Recepcionista/Admin puede abrir el expediente (RN-10-01).
+        </p>
+      </div>
+    </main>
+
+    <footer class="prototype-footer">
+      ASII-10 — Prototipo de evidencia académica, no es software de producción.
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

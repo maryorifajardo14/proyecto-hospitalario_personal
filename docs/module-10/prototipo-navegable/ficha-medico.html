@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de paciente — Carlos Gómez</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <span class="brand">Expediente médico electrónico</span>
+      <span class="badge-role">Sesión: <span data-role-badge></span></span>
+    </header>
+
+    <a class="back-link role-link" href="buscar-paciente.html">← Volver a búsqueda</a>
+
+    <main>
+      <h1>Carlos Gómez</h1>
+      <p class="patient-meta">Expediente: EXP-00042 · Abierto: 12/03/2026</p>
+
+      <div class="card">
+        <a class="btn btn-primary btn-block role-link" href="expediente-vista.html">
+          Consultar expediente longitudinal
+        </a>
+        <p class="rule-note">
+          RI-02 (Semana 8): este botón solo es visible para sesiones con rol
+          Médico/Enfermera/Admin.
+        </p>
+      </div>
+    </main>
+
+    <footer class="prototype-footer">
+      ASII-10 — Prototipo de evidencia académica, no es software de producción.
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

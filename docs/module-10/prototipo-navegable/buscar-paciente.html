@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscar paciente — ASII-10</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <span class="brand">Expediente médico electrónico</span>
+      <span class="badge-role">Sesión: <span data-role-badge></span></span>
+    </header>
+
+    <a class="back-link role-link" href="index.html">← Cambiar de rol</a>
+
+    <main>
+      <h1>Buscar paciente</h1>
+      <p class="patient-meta">
+        Búsqueda simulada (el módulo real de pacientes es ASII-03, fuera de alcance de ASII-10).
+        Elegí uno de los tres pacientes de ejemplo para recorrer los distintos resultados del
+        contrato de la API (Semana 5).
+      </p>
+
+      <div class="card">
+        <label for="buscador">Documento o nombre del paciente</label><br>
+        <input id="buscador" type="search" placeholder="Ej. 1234-56789-0101" style="width:100%;padding:.6rem;margin:.5rem 0 1rem;border:1px solid var(--color-border);border-radius:.4rem;" disabled>
+        <p class="rule-note">Campo deshabilitado en el prototipo: usá los resultados de ejemplo de abajo.</p>
+      </div>
+
+      <div class="card">
+        <h2>Resultados de ejemplo</h2>
+
+        <p>
+          <strong>Ana Pérez</strong> — doc. 1234-56789-0101<br>
+          <span class="patient-meta">Sin expediente abierto (caso 201/200 según rol)</span><br>
+          <a class="role-link" data-role="recepcionista" href="ficha-recepcionista-sin-expediente.html">Ver ficha (Recepcionista)</a>
+          <a class="role-link" data-role="medico" href="ficha-medico-sin-expediente.html">Ver ficha (Médico/Enfermera)</a>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>Carlos Gómez</strong> — doc. 9988-77665-0202<br>
+          <span class="patient-meta">Ya tiene expediente EXP-00042 (caso 409/200)</span><br>
+          <a class="role-link" data-role="recepcionista" href="ficha-recepcionista-existente.html">Ver ficha (Recepcionista)</a>
+          <a class="role-link" data-role="medico" href="ficha-medico.html">Ver ficha (Médico/Enfermera)</a>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>Usuario sin permiso</strong><br>
+          <span class="patient-meta">Simula el caso 403 (rol sin autorización)</span><br>
+          <a class="role-link" href="error-403.html">Ver pantalla de acceso denegado</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="prototype-footer">
+      ASII-10 — Prototipo de evidencia académica, no es software de producción.
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de paciente — Ana Pérez</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <span class="brand">Expediente médico electrónico</span>
+      <span class="badge-role">Sesión: <span data-role-badge></span></span>
+    </header>
+
+    <a class="back-link role-link" href="buscar-paciente.html">← Volver a búsqueda</a>
+
+    <main>
+      <h1>Ana Pérez</h1>
+      <p class="patient-meta">Documento: 1234-56789-0101 · Tenant: Hospital Norte</p>
+
+      <div class="card">
+        <div class="alert alert-warning" role="status">
+          ⚠ Este paciente no tiene expediente médico abierto.
+        </div>
+
+        <button type="button" class="btn btn-primary btn-block" data-open-modal>
+          Abrir expediente médico
+        </button>
+        <p class="rule-note">
+          RI-01 (Semana 8): este botón solo es visible para sesiones con rol Recepcionista/Admin.
+          RI-03: la apertura siempre pasa por un modal de confirmación, nunca es de un solo clic.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-box">
+        <h2 id="modal-title">Abrir expediente médico</h2>
+        <p>Se creará el expediente longitudinal para <strong>Ana Pérez</strong> (doc. 1234-56789-0101).</p>
+        <p class="patient-meta">Esta acción no se puede deshacer desde la interfaz (RN-10-01: un único expediente por paciente).</p>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" data-cancel-modal>Cancelar</button>
+          <a class="btn btn-primary role-link" data-confirm-modal href="expediente-creado-exito.html">Confirmar</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="prototype-footer">
+      RI-08 (Semana 9): el modal atrapa el foco de teclado, se cierra con Esc y devuelve el foco
+      al botón "Abrir expediente médico" al cerrarse. Probalo con Tab / Shift+Tab / Esc.
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

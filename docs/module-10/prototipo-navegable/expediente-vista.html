@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expediente EXP-00042 — Carlos Gómez</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <span class="brand">Expediente médico electrónico</span>
+      <span class="badge-role">Sesión: <span data-role-badge></span></span>
+    </header>
+
+    <a class="back-link role-link" href="buscar-paciente.html">← Volver a búsqueda</a>
+
+    <main>
+      <h1>Carlos Gómez</h1>
+      <p class="patient-meta">Expediente EXP-00042</p>
+
+      <div class="audit-note">
+        <span aria-hidden="true">ℹ</span>
+        <span>Esta consulta ha quedado registrada en la bitácora de auditoría (RF-10-06). RI-06
+        (Semana 8): este aviso nunca se oculta, ni siquiera en pantallas pequeñas (RI-13, Semana 10).</span>
+      </div>
+
+      <div class="record-grid">
+        <div class="card">
+          <h2>Antecedentes e historial</h2>
+          <p class="patient-meta">
+            Contenido longitudinal fuera de alcance de ASII-10 — poblado por los módulos
+            ASII-11 (SOAP), ASII-12 (alergias), ASII-13 (signos vitales) y ASII-15
+            (prescripciones) cuando estén integrados.
+          </p>
+
+          <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="panel-antecedentes">
+            <span>Antecedentes personales</span><span aria-hidden="true">+</span>
+          </button>
+          <div id="panel-antecedentes" class="accordion-panel" hidden>
+            Sin antecedentes registrados en este prototipo (contenido de ejemplo).
+          </div>
+
+          <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="panel-notas" style="margin-top:.5rem">
+            <span>Notas y evolución</span><span aria-hidden="true">+</span>
+          </button>
+          <div id="panel-notas" class="accordion-panel" hidden>
+            Se mostrarán aquí las notas SOAP del módulo ASII-11 una vez integrado.
+          </div>
+
+          <p class="rule-note">
+            RI-11 (Semana 10): estas secciones se abren/cierran también por teclado (Enter/Espacio
+            sobre el botón), priorizadas en acordeones colapsados en pantallas pequeñas (sección 3.1
+            de la Semana 10).
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Metadatos de apertura</h2>
+          <dl>
+            <dt><strong>Abierto por</strong></dt>
+            <dd>Recepcionista — María López</dd>
+            <dt style="margin-top:.5rem"><strong>Abierto el</strong></dt>
+            <dd>12/03/2026, 09:14</dd>
+            <dt style="margin-top:.5rem"><strong>Tenant</strong></dt>
+            <dd>Hospital Norte</dd>
+          </dl>
+        </div>
+      </div>
+    </main>
+
+    <footer class="prototype-footer">
+      Redimensioná la ventana o abrí esta página en un teléfono para ver la adaptación
+      responsive descrita en la Semana 10 (breakpoint <code>sm</code> &lt; 640px: una sola
+      columna, orden de prioridad definido en la sección 3.1).
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

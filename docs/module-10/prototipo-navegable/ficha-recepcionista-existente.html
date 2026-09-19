@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de paciente — Carlos Gómez</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <span class="brand">Expediente médico electrónico</span>
+      <span class="badge-role">Sesión: <span data-role-badge></span></span>
+    </header>
+
+    <a class="back-link role-link" href="buscar-paciente.html">← Volver a búsqueda</a>
+
+    <main>
+      <h1>Carlos Gómez</h1>
+      <p class="patient-meta">Documento: 9988-77665-0202 · Tenant: Hospital Norte</p>
+
+      <div class="card">
+        <div class="alert alert-warning" role="status">
+          Ya existe un expediente para este paciente (EXP-00042, abierto el 12/03/2026).
+        </div>
+        <p>El sistema responde <strong>409 Conflict</strong> si se intenta abrir uno nuevo (RN-10-01).</p>
+        <a class="btn btn-primary btn-block role-link" href="expediente-vista.html">Ir al expediente existente</a>
+        <p class="rule-note">
+          RI-04 (Semana 8): ante un expediente duplicado, la interfaz nunca ofrece reintentar la
+          apertura — reemplaza el botón por un enlace directo al expediente existente.
+        </p>
+      </div>
+    </main>
+
+    <footer class="prototype-footer">
+      ASII-10 — Prototipo de evidencia académica, no es software de producción.
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

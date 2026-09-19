@@ -14,6 +14,11 @@ Documentación de análisis y diseño del módulo de Expediente médico electró
 - [Semana 4 — Diseño por capas y responsabilidades](./semana-4-diseno-por-capas.md)
 - [Semana 5 — Contrato API preliminar y plan de integración](./semana-5-contrato-api-plan-integracion.md)
 - [Semana 6 — Primera evaluación parcial: defensa teórica y caso práctico arquitectónico](./semana-6-primera-evaluacion-parcial.md)
+- [Semana 7 — Diseño de componentes backend/frontend y propuesta de refactorización](./semana-7-diseno-componentes-refactorizacion.md)
+- [Semana 8 — Flujo UX por rol: user flow, wireframes y reglas de interacción](./semana-8-flujo-ux-por-rol.md)
+- [Semana 9 — Evaluación de usabilidad y accesibilidad](./semana-9-usabilidad-accesibilidad.md)
+- [Semana 10 — Adaptación responsive/móvil](./semana-10-responsive-movil.md)
+- [Semana 11 — Mockup o prototipo navegable](./semana-11-mockup-prototipo.md) ([prototipo interactivo](./prototipo-navegable/index.html))
 - [Declaración de uso de IA](./DECLARACION_IA.md)
 
 ## Actividad integradora de arquitectura federada y persistencia
@@ -32,3 +37,8 @@ forma independiente del plan semanal de arriba: ver [`docs/modulos/mod10/`](../m
 | 4 | Diseño por capas y responsabilidades | ✅ Entregado |
 | 5 | Contrato API preliminar y plan de integración | ✅ Entregado |
 | 6 | Primera evaluación parcial (defensa teórica y caso práctico arquitectónico) | ✅ Entregado |
+| 7 | Diseño de componentes backend/frontend y propuesta de refactorización | ✅ Entregado |
+| 8 | Flujo UX por rol: user flow, wireframes y reglas de interacción | ✅ Entregado |
+| 9 | Evaluación de usabilidad y accesibilidad | ✅ Entregado |
+| 10 | Adaptación responsive/móvil | ✅ Entregado |
+| 11 | Mockup o prototipo navegable | ✅ Entregado |
